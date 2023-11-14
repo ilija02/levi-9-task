@@ -16,7 +16,7 @@ def get_player_stats(playerFullName):
         return jsonify({"error": "Player name is required"}), 400
     player_stats = calculate_player_stats(playerFullName)
     if player_stats.get("error"):
-        return jsonify(player_stats), 400
+        return jsonify(player_stats), 404
 
     return jsonify(player_stats)
 
