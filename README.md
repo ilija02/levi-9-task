@@ -89,7 +89,7 @@ Replace `{playerFullName}` with the full name of the player.
 
 ### Example
 
-```http
+```bash
 curl -X GET http://127.0.0.1:5000/stats/player/Sifiso%20Abdalla/
 ```
 
