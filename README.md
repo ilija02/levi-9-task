@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ### 4. Run the Application
 
 ```bash
-python app/main.py
+python api/api.py
 ```
 
 The API will be accessible at [http://127.0.0.1:5000](http://127.0.0.1:5000).
@@ -96,6 +96,9 @@ curl -X GET http://127.0.0.1:5000/stats/player/Sifiso%20Abdalla/
 ## Running unit-tests
 
 To run the unit tests, issue the following command in the project root directory (while being in a virtual environment)
+```bash
+cd api
+```
 ```python
-python -m unittest discover tests
+python -m unittest discover ../tests
 ```
