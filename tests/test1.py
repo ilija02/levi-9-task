@@ -1,12 +1,14 @@
 import unittest
-from app.app import app
+
+from api.main import app
+
 
 class TestApp(unittest.TestCase):
     def setUp(self):
         self.app = app.test_client()
 
     def test_get_player_stats(self):
-        response = self.app.get('/stats/player/Sifiso%20Abdalla/')
+        response = self.app.get("/stats/player/Sifiso%20Abdalla/")
         data = response.get_json()
 
         # Check if the response is successful (status code 200)
@@ -61,9 +63,8 @@ class TestApp(unittest.TestCase):
         self.assertEqual(data["advanced"]["trueShootingPercentage"], 46.7)
         self.assertEqual(data["advanced"]["hollingerAssistRatio"], 4.4)
 
-
     def test_invalid_player_name(self):
-        response = self.app.get('/stats/player/InvalidPlayerName/')
+        response = self.app.get("/stats/player/InvalidPlayerName/")
         data = response.get_json()
 
         # Check if the response indicates player not found (status code 404)
@@ -71,5 +72,6 @@ class TestApp(unittest.TestCase):
         self.assertTrue("error" in data)
         self.assertEqual(data["error"], "Player not found")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

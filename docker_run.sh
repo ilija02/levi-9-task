@@ -6,7 +6,7 @@
 PORT=8000
 
 # Define the Docker image name
-IMAGE_NAME="flask_docker"
+IMAGE_NAME="basketball-stats-api"
 
 # Check if the container is running
 if docker ps -a --format "{{.Names}}" | grep -q "^${IMAGE_NAME}$"; then
