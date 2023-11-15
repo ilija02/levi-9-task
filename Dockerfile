@@ -1,9 +1,11 @@
 # Use an official Python runtime as a parent image
 FROM python:3.11-alpine
 
-# Copy the current directory contents into the container at /app
-COPY . /app
 
+# Copy the current directory contents into the container at /app
+COPY ./app /app
+
+COPY requirements.txt /app/requirements.txt
 # Set the working directory
 WORKDIR /app
 
@@ -26,4 +28,4 @@ EXPOSE $PORT
 ENTRYPOINT [ "python" ]
 
 # Run app.py when the container launches
-CMD ["app/app.py"]
+CMD ["main.py"]
