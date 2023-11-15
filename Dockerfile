@@ -3,11 +3,11 @@ FROM python:3.11-alpine
 
 
 # Copy the current directory contents into the container at /app
-COPY ./app /app
+COPY ./api /api
 
-COPY requirements.txt /app/requirements.txt
+COPY requirements.txt /api/requirements.txt
 # Set the working directory
-WORKDIR /app
+WORKDIR /api
 
 # Set nameservers
 RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf

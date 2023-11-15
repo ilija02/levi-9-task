@@ -65,7 +65,13 @@ docker build -t basketball-stats-api .
 docker run -p 5000:5000 basketball-stats-api
 ```
 
+## Docker the lazy way
 
+If you can't be bothered to run docker commands manually, you can do
+```bash
+chmod +x docker_run.sh
+./docker_run.sh
+```
 
 The API will be accessible at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
