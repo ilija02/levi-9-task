@@ -3,7 +3,7 @@
 
 # This script is used for testing the build/deploy of a single instance of the app
 # Set the port, feel free to change this
-PORT=8000
+PORT=5000
 
 # Define the Docker image name
 IMAGE_NAME="basketball-stats-api"
