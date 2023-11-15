@@ -99,3 +99,9 @@ To run the unit tests, issue the following command in the project root directory
 ```python
 python -m unittest discover tests
 ```
+=======
+# levi-9-task
+Code repository for Levi 9 task solution
+
+# Note: still WIP
+>>>>>>> dac6d40fc29eb7673fca30858996ae3e8a26351d
