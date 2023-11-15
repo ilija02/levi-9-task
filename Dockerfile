@@ -28,4 +28,4 @@ EXPOSE $PORT
 ENTRYPOINT [ "python" ]
 
 # Run app.py when the container launches
-CMD ["main.py"]
+CMD ["api.py"]
