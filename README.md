@@ -98,7 +98,5 @@ curl -X GET http://127.0.0.1:5000/stats/player/Sifiso%20Abdalla/
 To run the unit tests, issue the following command in the project root directory (while being in a virtual environment)
 ```bash
 cd api
-```
-```python
 python -m unittest discover ../tests
 ```
